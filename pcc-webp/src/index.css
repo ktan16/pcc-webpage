@@ -4,16 +4,22 @@
   Author: Kendrick Tan
 */
 
+/* Import Open Sans font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+
 /* Import tailwindcss */
 @import "tailwindcss";
 
-/* Import Open Sans font from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@theme {
+  --font-sans: "Open Sans", sans-serif;
+  --font-serif: "DM Serif Text", serif;
 
-/* Global Settings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  --color-primary: #2240aa; /* Deep blue (logo) */
+  --color-accent: #d67b26; /* Burnt orange (logo) */
+  --color-sand: #f2d6a1; /* Light beige background */
+  --color-offwhite: #faf8f3; /* Neutral light */
+  --color-charcoal: #2b2b2b; /* Dark gray text */
+
+  --color-redy: #444444;
 }

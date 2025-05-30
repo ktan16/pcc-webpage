@@ -8,11 +8,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div>
-      <div>
-        <h1 class="text-3xl font-bold underline">Hello World</h1>
-      </div>
-    </div>
+    <section class="bg-primary text-offwhite">
+      <div class="text-center text-5xl font-bold font-sans">Hero Section</div>
+    </section>
   );
 };
 
