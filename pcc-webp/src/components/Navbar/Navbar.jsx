@@ -8,6 +8,7 @@ import React, { useState } from "react";
 // Asset imports
 import pcc_logo from "../../assets/pcc_logo.png";
 import menu_icon from "../../assets/menu.png";
+import close_icon from "../../assets/close.png";
 
 const Navbar = () => {
   // Map Navbar items for convenience
@@ -17,7 +18,7 @@ const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <nav className="relative flex items-center justify-between px-6 py-4 bg-offwhite">
+    <nav className="relative z-50 h-32 flex items-center justify-between px-6 py-4 bg-offwhite">
       {/* ==== Logo ==== */}
       <img
         src={pcc_logo}
@@ -46,19 +47,43 @@ const Navbar = () => {
         className="block sm:hidden cursor-pointer"
       />
 
-      {mobileMenu && (
-        <ul className="absolute top-full right-0 w-[150px] h-[85vh] bg-offwhite shadow-lg p-6 flex flex-col gap-6 text-charcoal text-right font-sans sm:hidden z-50">
+      <>
+        {/* ==== Mobile Menu ==== */}
+        {mobileMenu && (
+          <div
+            onClick={() => setMobileMenu(false)}
+            className="fixed inset-0 bg-black/50 sm:hidden z-40"
+          ></div>
+        )}
+
+        {/* Animated sliding menu */}
+        <ul
+          className={`fixed top-0 right-0 w-[300px] h-screen bg-offwhite shadow-lg px-6 py-10 flex flex-col gap-5 text-charcoal text-right font-sans sm:hidden z-50 transform transition-transform duration-300 ${
+            mobileMenu ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Close Icon */}
+          <div className="flex justify-end">
+            <img
+              src={close_icon}
+              alt="Close"
+              onClick={() => setMobileMenu(false)}
+              className="w-6 h-6 cursor-pointer mb-2"
+            />
+          </div>
+
+          {/* Navbar items (mobile) */}
           {navItems.map((item) => (
             <li
               key={item}
               className="hover:text-accent transition-colors duration-200 cursor-pointer"
-              onClick={() => setMobileMenu(false)} // Close on click
+              onClick={() => setMobileMenu(false)}
             >
               {item}
             </li>
           ))}
         </ul>
-      )}
+      </>
     </nav>
   );
 };
