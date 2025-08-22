@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:pr-10">
         {/* Main Text */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-charcoal max-w-xl mx-auto md:mx-0">
-          Empowering Stronger, Sustainable Rope Solutions
+          Engineered Strength, Rooted in Nature.
         </h1>
 
         {/* Subtext */}
