@@ -24,10 +24,13 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="mt-6 flex gap-4 justify-center md:justify-start">
-          <button className="px-6 py-3 bg-accent text-white rounded-full">
+          {/* Primary Button */}
+          <button className="px-6 py-3 bg-accent text-white rounded-full transition duration-200 hover:bg-[#b4621e]">
             View Products
           </button>
-          <button className="px-6 py-3 border border-charcoal text-charcoal rounded-full">
+
+          {/* Secondary Button */}
+          <button className="px-6 py-3 border border-charcoal text-charcoal rounded-full transition duration-200 hover:bg-charcoal hover:text-white">
             Our Story
           </button>
         </div>
