@@ -25,9 +25,12 @@ const Navbar = () => {
         alt="PCC Logo"
         className="w-24 h-auto cursor-pointer"
       />
+      <span className="font-serif text-3xl text-charcoal cursor-pointer">
+        Pacific Cordage Corp.
+      </span>
 
       {/* ==== Navbar Items (Desktop) ==== */}
-      <ul className="hidden sm:flex gap-10 text-charcoal font-sans">
+      <ul className="hidden lg:flex gap-10 text-charcoal font-sans">
         {/* Display each item with given CSS */}
         {navItems.map((item) => (
           <li
@@ -44,7 +47,7 @@ const Navbar = () => {
         src={menu_icon}
         alt="Menu"
         onClick={() => setMobileMenu(!mobileMenu)}
-        className="block sm:hidden cursor-pointer"
+        className="block lg:hidden cursor-pointer"
       />
 
       <>
@@ -52,13 +55,13 @@ const Navbar = () => {
         {mobileMenu && (
           <div
             onClick={() => setMobileMenu(false)}
-            className="fixed inset-0 bg-black/50 sm:hidden z-40"
+            className="fixed inset-0 bg-black/50 lg:hidden z-40"
           ></div>
         )}
 
         {/* Animated sliding menu */}
         <ul
-          className={`fixed top-0 right-0 w-[300px] h-screen bg-offwhite shadow-lg px-6 py-13 flex flex-col gap-10 text-charcoal text-right font-sans sm:hidden z-50 transform transition-transform duration-300 ${
+          className={`fixed top-0 right-0 w-[300px] h-screen bg-offwhite shadow-lg px-6 py-13 flex flex-col gap-10 text-charcoal text-right font-sans lg:hidden z-50 transform transition-transform duration-300 ${
             mobileMenu ? "translate-x-0" : "translate-x-full"
           }`}
         >
