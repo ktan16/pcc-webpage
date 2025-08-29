@@ -6,6 +6,7 @@
 
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
 import { Element } from "react-scroll";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
       <Element name="hero">
         <Hero />
+        <About />
       </Element>
     </div>
   );
