@@ -12,7 +12,7 @@ import close_icon from "../../assets/close.png";
 
 const Navbar = () => {
   // Map Navbar items for convenience
-  const navItems = ["HOME", "ABOUT", "PRODUCT", "ROOTS", "CONTACT"];
+  const navItems = ["HOME", "ABOUT", "PRODUCT", "CONTACT"];
 
   // useState to set mobile menu
   const [mobileMenu, setMobileMenu] = useState(false);
