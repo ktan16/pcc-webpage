@@ -18,7 +18,7 @@ const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <nav className="relative z-50 h-32 flex items-center justify-between px-6 py-4 bg-offwhite">
+    <nav className="sticky top-0 z-50 h-32 flex items-center justify-between px-6 py-4 bg-offwhite/95 backdrop-blur border-b border-black/10">
       {/* ==== Logo ==== */}
       <img
         src={pcc_logo}
@@ -61,7 +61,7 @@ const Navbar = () => {
 
         {/* Animated sliding menu */}
         <ul
-          className={`fixed top-0 right-0 w-[300px] h-screen bg-offwhite shadow-lg px-6 py-13 flex flex-col gap-10 text-charcoal text-right font-sans lg:hidden z-50 transform transition-transform duration-300 ${
+          className={`fixed top-0 right-0 w-[300px] h-screen bg-offwhite shadow-lg px-6 py-12 flex flex-col gap-10 text-charcoal text-right font-sans lg:hidden z-50 transform transition-transform duration-300 ${
             mobileMenu ? "translate-x-0" : "translate-x-full"
           }`}
         >
