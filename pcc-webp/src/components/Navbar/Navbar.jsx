@@ -27,7 +27,7 @@ const Navbar = () => {
       />
 
       {/* ==== Navbar Items (Desktop) ==== */}
-      <ul className="hidden sm:flex gap-6 text-charcoal font-sans">
+      <ul className="hidden sm:flex gap-10 text-charcoal font-sans">
         {/* Display each item with given CSS */}
         {navItems.map((item) => (
           <li
@@ -58,7 +58,7 @@ const Navbar = () => {
 
         {/* Animated sliding menu */}
         <ul
-          className={`fixed top-0 right-0 w-[300px] h-screen bg-offwhite shadow-lg px-6 py-13 flex flex-col gap-5 text-charcoal text-right font-sans sm:hidden z-50 transform transition-transform duration-300 ${
+          className={`fixed top-0 right-0 w-[300px] h-screen bg-offwhite shadow-lg px-6 py-13 flex flex-col gap-10 text-charcoal text-right font-sans sm:hidden z-50 transform transition-transform duration-300 ${
             mobileMenu ? "translate-x-0" : "translate-x-full"
           }`}
         >
