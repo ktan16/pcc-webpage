@@ -16,7 +16,7 @@ slip resistant when wet, maintains grip because of naturally coarse threads
 */
 
 import React from "react";
-import about from "../../assets/about.png";
+import about from "../assets/about.png";
 
 const About = () => {
   return (

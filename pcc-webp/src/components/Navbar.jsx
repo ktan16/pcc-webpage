@@ -6,9 +6,9 @@
 import React, { useState } from "react";
 
 // Asset imports
-import pcc_logo from "../../assets/pcc_logo.png";
-import menu_icon from "../../assets/menu.png";
-import close_icon from "../../assets/close.png";
+import pcc_logo from "../assets/pcc_logo.png";
+import menu_icon from "../assets/menu.png";
+import close_icon from "../assets/close.png";
 
 const Navbar = () => {
   // Map Navbar items for convenience
