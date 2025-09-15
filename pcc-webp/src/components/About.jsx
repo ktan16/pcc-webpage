@@ -20,7 +20,7 @@ import about from "../assets/about.png";
 
 const About = () => {
   return (
-    <section id="about" className="bg-offwhite py-20 px-10 md:px-30 lg:px-60">
+    <section className="bg-offwhite py-20 px-10 md:px-30 lg:px-60" id="about">
       <div className="max-w-4xl mx-auto text-center text-charcoal">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-10">
