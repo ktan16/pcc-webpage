@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import { Element } from "react-scroll";
+import Product from "./components/Product";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Element name="hero">
         <Hero />
         <About />
+        <Product />
       </Element>
     </div>
   );
