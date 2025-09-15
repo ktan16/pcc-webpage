@@ -12,6 +12,7 @@ const Hero = () => {
     <section
       className="relative w-full h-[100vh] flex items-center justify-center bg-center bg-cover"
       style={{ backgroundImage: `url(${hero})` }}
+      id="hero"
     >
       {/* ==== Dark overlay ==== */}
       <div className="absolute inset-0 bg-black/60"></div>
