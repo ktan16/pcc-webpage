@@ -1,4 +1,8 @@
-import React from "react";
+/*
+  File: Contact.jsx
+  Description: Contact section with company contact information and Formspree form submission.
+  Author: Kendrick Tan
+*/
 
 const Contact = () => {
   return (

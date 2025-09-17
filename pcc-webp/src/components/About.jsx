@@ -1,21 +1,9 @@
 /*
   File: About.jsx
-  Description: About section.
+  Description: About section describing company background using styled typography and layout.
   Author: Kendrick Tan
 */
 
-/*
-1975 isi born, 1978 pcc born by the same guy
-pcc buys abaca fibers from supplier
-abaca fibers come in many different classes
-pcc creates custom blends of the different classes of fibers for each order
-every blend meets certain criteria/strength tests depending on the order
-bicol is one of if not the most abundant in abaca production
-used for movie sets, ships, furniture
-slip resistant when wet, maintains grip because of naturally coarse threads
-*/
-
-import React from "react";
 import about from "../assets/about.png";
 
 const About = () => {

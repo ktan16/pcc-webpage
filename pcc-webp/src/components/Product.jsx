@@ -1,4 +1,10 @@
-import React, { useState } from "react";
+/*
+  File: Product.jsx
+  Description: Maps over product items to display alternating rope roll and strand images.
+  Author: Kendrick Tan
+*/
+
+import { useState } from "react";
 import roll1 from "../assets/gallery/roll1.jpg";
 import roll2 from "../assets/gallery/roll2.jpg";
 import roll3 from "../assets/gallery/roll3.jpg";
@@ -52,7 +58,7 @@ const Product = () => {
             <figure
               key={item.id}
               className="overflow-hidden rounded-2xl bg-white border border-black/10"
-              onClick={() => toggleString(item.id)}
+              onClick={() => toggleString(item.id)} // clicking image will toggle roll/string view
             >
               {/* Shows either roll or string based on showString state */}
               <img
