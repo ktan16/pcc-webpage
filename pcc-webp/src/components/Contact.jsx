@@ -40,7 +40,7 @@ const Contact = () => {
 
           {/* ==== Contact Form ==== */}
           <form
-            action="https://formspree.io/f/xgvkavkb"
+            action="https://formspree.io/f/xkgvlzyy"
             method="POST"
             className="space-y-4 bg-white shadow-md rounded-2xl p-6 font-sans"
           >
