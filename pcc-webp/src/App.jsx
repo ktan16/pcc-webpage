@@ -7,8 +7,9 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import { Element } from "react-scroll";
 import Product from "./components/Product";
+import Contact from "./components/Contact";
+import { Element } from "react-scroll";
 
 function App() {
   return (
@@ -17,8 +18,18 @@ function App() {
 
       <Element name="hero">
         <Hero />
+      </Element>
+
+      <Element name="about">
         <About />
+      </Element>
+
+      <Element name="product">
         <Product />
+      </Element>
+
+      <Element name="contact">
+        <Contact />
       </Element>
     </div>
   );
