@@ -4,8 +4,11 @@
   Author: Kendrick Tan
 */
 
-import React from "react";
 import hero from "../assets/hero.jpg";
+import { Link } from "react-scroll";
+
+const OFFSET = -128; // h-navbar => 128px. Gives space for titles from sticky navbar.
+const DURATION = 500;
 
 const Hero = () => {
   return (
@@ -30,13 +33,25 @@ const Hero = () => {
 
         {/* ==== Buttons ==== */}
         <div className="mt-6 flex gap-3 justify-center md:justify-start flex-wrap">
-          <button className="px-4 py-2 md:px-6 md:py-3 text-sm md:text-base bg-accent text-white rounded-full transition duration-200 hover:bg-[#b4621e]">
+          <Link
+            to="product"
+            smooth
+            duration={DURATION}
+            offset={OFFSET}
+            className="px-4 py-2 md:px-6 md:py-3 text-sm md:text-base bg-accent text-white rounded-full transition duration-200 hover:bg-[#b4621e]"
+          >
             View Products
-          </button>
+          </Link>
 
-          <button className="px-4 py-2 md:px-6 md:py-3 text-sm md:text-base border border-white text-white rounded-full transition duration-200 hover:bg-white hover:text-charcoal">
+          <Link
+            to="contact"
+            smooth
+            duration={DURATION}
+            offset={OFFSET}
+            className="px-4 py-2 md:px-6 md:py-3 text-sm md:text-base border border-white text-white rounded-full transition duration-200 hover:bg-white hover:text-charcoal"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </section>
