@@ -6,7 +6,7 @@
 
 const Contact = () => {
   return (
-    <section className="py-20 bg-offwhite" id="contact">
+    <section className="min-h-screen py-20 bg-offwhite" id="contact">
       <div className="max-w-5xl mx-auto px-6 text-charcoal">
         {/* ==== Heading ==== */}
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-10">
@@ -26,11 +26,17 @@ const Contact = () => {
           <div className="flex flex-col justify-center space-y-6">
             <div>
               <h3 className="font-serif text-xl font-bold">Our Address</h3>
-              <p className="font-sans">123 Rope Street, Manila, Philippines</p>
+              <p className="font-sans">
+                Purok 4, Brgy. Lidong
+                <br />
+                Sto. Domingo, Albay 4508
+                <br />
+                Bicol Region, Philippines
+              </p>
             </div>
             <div>
               <h3 className="font-serif text-xl font-bold">Call Us</h3>
-              <p className="font-sans">+63 917 629 7708</p>
+              <p className="font-sans">+63 948 500 4166</p>
             </div>
             <div>
               <h3 className="font-serif text-xl font-bold">Email Us</h3>
